@@ -1,8 +1,8 @@
-LOCAL_REPO="/home/localuser"
-USERNAME="username"
-PASSWORD="password"
-REMOTE_REPO="github.com/github_user/repo-name.git"
-EMAIL="email@domain.com"
+LOCAL_REPO="/root/gittest"
+USERNAME="ShahanMirza"
+PASSWORD="2Piee=360"
+REMOTE_REPO="https://github.com/ShahanMirza/Oauth"
+EMAIL="muhammadshahan92@gmail.com"
 
 cd $LOCAL_REPO
 
