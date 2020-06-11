@@ -13,7 +13,8 @@ mkdir -p "log" && touch $log_file
 day="${log_file:0:14}" # gets the first 10 characters of string
 
 containsLogFromToday=0
-
+t config --global --unset http.proxy 
+git config --global --unset https.proxy
 add_commit_push()
 {
     echo "-------ADD COMMENTS-------" >> $log_file
