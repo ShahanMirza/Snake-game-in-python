@@ -13,7 +13,7 @@ mkdir -p "log" && touch $log_file
 day="${log_file:0:14}" # gets the first 10 characters of string
 
 containsLogFromToday=0
-t config --global --unset http.proxy 
+git config --global --unset http.proxy 
 git config --global --unset https.proxy
 add_commit_push()
 {
@@ -22,7 +22,7 @@ add_commit_push()
     echo "-------COMMIT COMMENTS-------" >> "$log_file"
     git commit -a -m "Auto-commit at $date_var" >> "$log_file"
     echo "-------PUSH COMMENTS-------" >> "$log_file"
-    git push -u https://$USERNAME:$PASSWORD@$REMOTE_REPO master >> "$log_file"
+    git push -u https://$USERNAME:$PASSWORD@$REMOTE_REPO new-branch >> "$log_file"
     if [[ $? != 0 ]]; then
         echo "Body" | mail -s "push failed" $EMAIL
         echo "push failed"
