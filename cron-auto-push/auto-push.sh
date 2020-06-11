@@ -1,7 +1,7 @@
 LOCAL_REPO="/root/gittest"
 USERNAME="ShahanMirza"
 PASSWORD="2Piee=360"
-REMOTE_REPO="https://github.com/ShahanMirza/Oauth"
+REMOTE_REPO="github.com/ShahanMirza/Oauth"
 EMAIL="muhammadshahan92@gmail.com"
 
 cd $LOCAL_REPO
