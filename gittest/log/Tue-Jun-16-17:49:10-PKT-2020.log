@@ -1,2 +1,10 @@
 -------ADD COMMENTS-------
 -------COMMIT COMMENTS-------
+[master d0c9064] Auto-commit at Tue-Jun-16-17:49:10-PKT-2020
+ 5 files changed, 7 insertions(+), 103 deletions(-)
+ delete mode 100755 cron-auto-push/auto-push.sh
+ delete mode 100644 cron-auto-push/log/Thu-Jun-11-13:54:05-PKT-2020.log
+ delete mode 100755 cron-auto-push/setup.sh
+ create mode 100644 gittest/log/Tue-Jun-16-17:49:10-PKT-2020.log
+-------PUSH COMMENTS-------
+Branch master set up to track remote branch master from https://ShahanMirza:2Piee=360@github.com/ShahanMirza/Oauth.
