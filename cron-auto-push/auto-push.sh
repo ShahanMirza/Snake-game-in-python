@@ -22,7 +22,7 @@ add_commit_push()
     echo "-------COMMIT COMMENTS-------" >> "$log_file"
     git commit -a -m "Auto-commit at $date_var" >> "$log_file"
     echo "-------PUSH COMMENTS-------" >> "$log_file"
-    git push -u https://$USERNAME:$PASSWORD@$REMOTE_REPO new-branch-2 >> "$log_file"
+    git push -u https://$USERNAME:$PASSWORD@$REMOTE_REPO master >> "$log_file"
     if [[ $? != 0 ]]; then
         echo "Body" | mail -s "push failed" $EMAIL
         echo "push failed"
