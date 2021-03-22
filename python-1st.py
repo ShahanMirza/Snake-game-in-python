@@ -71,9 +71,43 @@
 # txt = "We are the so-called \"Vikings\" from the north."
 # print(txt)
 
-class myclass():
- def myfunc(self):
-    return 0
+# class myclass():
+#  def myfunc(self):
+#     return 0
 
-x=myclass()
-print(bool(x.myfunc()))
+# x=myclass()
+# print(bool(x.myfunc()))
+
+# testList=["apple","banana","cherry","mango","pineapple","kiwi","malon"]
+# newList=[x for x in testList if "ap" in x ]
+# print(newList)
+# for x in testList:
+#     if "apple" in x:
+#         newList.append(x)
+# print(newList)
+# print(testList)
+# for i in range(len(testList)):
+#     if testList[i]=="mango":
+#         testList[i]="lolipop"
+# print(testList)
+
+# thistuple = ("apple", "banana", "cherry")
+# print(thistuple)
+# thisJson={
+#     "brand":"ford",
+#     "model":"Mustang",
+#     "year":2021
+# }
+# thisJson['color']='black'
+# print(thisJson)
+# x=thisJson.values()
+# print(x)
+
+# x=lambda a,b,c:a*b*c
+# print(x(6,2,3))
+
+def myfunc(n):
+    return lambda a: a+n
+
+mydouble=myfunc(2)
+print(mydouble(11))
