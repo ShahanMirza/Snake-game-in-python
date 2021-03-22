@@ -106,8 +106,67 @@
 # x=lambda a,b,c:a*b*c
 # print(x(6,2,3))
 
-def myfunc(n):
-    return lambda a: a+n
+# def myfunc(n):
+#     return lambda a: a+n
 
-mydouble=myfunc(2)
-print(mydouble(11))
+# mydouble=myfunc(2)
+# print(mydouble(11))
+
+#divisible by 7 but are not a multiple of 5
+
+# l=[]
+# for i in range(20,320):
+#     if(i%7==0) and (i%5!=0):
+#         l.append(str(i))
+# print (','.join(l))
+
+#factorial
+
+
+# def factor(count):
+#  if count==0:
+#     return 1
+#  return count*factor(count-1)
+# count=int(input())
+# print (factor(count))
+
+#program to generate a dictionary that contains (i, i*i)
+# n=int(input())
+# d=dict()
+# for i in range(1,n+1):
+#     d[i]=i*i
+# print (d)
+
+#comma-separated numbers from console and generate a list and a tuple which contains every number
+# value=input()
+# l=value.split(",)
+# t=tuple(l)
+# print(l)
+# print(t)
+
+# class InputOutString(object):
+#     def __init__(self):
+#         self.s=""
+#     def getString(self):
+#         self.s=input()
+#     def printString(self):
+#         print self.s.upper()
+# strObj=InputOutString()
+# strObj.getString()
+# strObj.printString()   
+# def solve(numheads,numlegs):
+#     ns='No solutions!'
+#     for i in range(numheads+1):
+#         j=numheads-i
+#         if 2*i+4*j==numlegs:
+#             return i,j
+#     return ns,ns
+
+# numheads=35
+# numlegs=94
+# solutions=solve(numheads,numlegs)
+# print (solutions )
+
+s=input()
+s=s[::-1]
+print(s)
